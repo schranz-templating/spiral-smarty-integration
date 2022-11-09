@@ -27,7 +27,9 @@
     "require": {
         "php": "^7.2 || ^8.0",
         "schranz-templating/smarty-adapter": "^0.1",
-        "psr/container": "^1.0 || ^2.0"
+        "spiral/boot": "^3.0",
+        "spiral/config": "^3.0",
+        "spiral/core": "^3.0"
     },
     "minimum-stability": "dev",
     "config": {

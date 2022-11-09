@@ -28,6 +28,18 @@ class Kernel extends \Spiral\Framework\Kernel
 
 ## Configuration
 
-The Smarty Integration has currently no configuration as Smarty
-is supported out of the box by Spiral and can be configured
-via the [Spiral Smarty Views](https://spiral.dev/docs/views-smarty).
+The integration provides the following configuration.
+
+```php
+// app/config/schranz_templating_smarty.php
+
+declare(strict_types=1);
+
+return [
+    'paths' => [
+        'hello' => 'app/views',
+    ],
+    'cache_dir' => 'runtime/cache/smarty/cache',
+    'compile_dir' => 'runtime/cache/smarty/compile',
+];
+```
